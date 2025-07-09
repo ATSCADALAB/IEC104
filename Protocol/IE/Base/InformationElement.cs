@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IEC104.Protocol.IE.Base
+﻿namespace IEC104.Protocol.IE.Base
 {
-    class InformationElement
+    /// <summary>
+    /// Base class for all Information Elements in IEC 60870-5-104
+    /// </summary>
+    public abstract class InformationElement
     {
+        // Base class for all IE types
+        // Each specific IE will inherit from this
     }
 }

@@ -8,5 +8,9 @@ namespace IEC104.Protocol.Enum
 {
     class TypeId
     {
+        public static explicit operator TypeId(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

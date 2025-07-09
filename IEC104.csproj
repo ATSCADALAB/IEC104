@@ -40,6 +40,9 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -114,11 +117,20 @@
     <Compile Include="Protocol\IE\Base\IeAbstractQuality.cs" />
     <Compile Include="Protocol\IE\Base\InformationElement.cs" />
     <Compile Include="Protocol\IE\IeBinaryCounterReading.cs" />
+    <Compile Include="Protocol\IE\IeBinaryCounterReadingExtensions.cs" />
+    <Compile Include="Protocol\IE\IeBinaryStateInformation.cs" />
+    <Compile Include="Protocol\IE\IeDoubleCommand.cs" />
     <Compile Include="Protocol\IE\IeDoublePointWithQuality.cs" />
+    <Compile Include="Protocol\IE\IeDoublePointWithQualityExtensions.cs" />
+    <Compile Include="Protocol\IE\IeNormalizedValue.cs" />
     <Compile Include="Protocol\IE\IeQualifierOfSetPointCommand.cs" />
+    <Compile Include="Protocol\IE\IeQuality.cs" />
+    <Compile Include="Protocol\IE\IeScaledValue.cs" />
     <Compile Include="Protocol\IE\IeShortFloat.cs" />
+    <Compile Include="Protocol\IE\IeShortFloatExtensions.cs" />
     <Compile Include="Protocol\IE\IeSingleCommand.cs" />
     <Compile Include="Protocol\IE\IeSinglePointWithQuality.cs" />
+    <Compile Include="Protocol\IE\IeSinglePointWithQualityExtensions.cs" />
     <Compile Include="Protocol\IE\IeTime56.cs" />
     <Compile Include="Protocol\Object\APdu.cs" />
     <Compile Include="Protocol\Object\ASdu.cs" />
@@ -131,6 +143,8 @@
     <Compile Include="Writer\CommandValidator.cs" />
     <Compile Include="Writer\CommandWriter.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
