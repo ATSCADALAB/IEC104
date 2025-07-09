@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ATDriverInterface">
+      <HintPath>H:\ATSCADA_V5.0.0.0\ATPro\ATDriverServer\ATDriverInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="DriverPluginInterface">
+      <HintPath>C:\Program Files\ATPro\ATSCADA\DriverPluginInterface.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
